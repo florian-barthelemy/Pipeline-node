@@ -1,0 +1,23 @@
+name: Validate conventionnal Commits
+
+on:
+    push:
+        branches:
+            - 'features/**'
+            - 'hotfix/**'
+
+jobs:
+    comitLint:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Install dependencies
+              run: npm install
+            
+            - name: Run commitlint
+              uses: wagoid/commitlint-github-action@v3
+              with:
+                configFile: .commitlintrc.yml
