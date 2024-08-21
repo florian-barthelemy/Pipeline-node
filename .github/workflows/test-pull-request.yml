@@ -3,9 +3,9 @@ name: Test and coverage on pull requests
 on :
     pull_request:
         branches:
-            - develop
+            - 'develop'
         paths:
-            - features/**
+            - 'features/**'
 
 jobs:
     test:
