@@ -1,2 +1,2 @@
 # Pipeline-node
-retest pr with coverage
+retest pr with coverages
