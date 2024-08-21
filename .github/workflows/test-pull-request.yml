@@ -2,10 +2,10 @@ name: Test and coverage on pull requests
 
 on :
     pull_request:
-            branches:
-                - develop
-            paths:
-                - features/**
+        branches:
+            - develop
+        paths:
+            - features/**
 
 jobs:
     test:
