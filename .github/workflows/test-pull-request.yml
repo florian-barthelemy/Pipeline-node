@@ -4,12 +4,13 @@ on :
     pull_request:
         branches:
             - 'develop'
-        paths:
-            - 'features/**'
+        types:
+            [opened]
 
 jobs:
     test:
         runs-on: ubuntu-latest
+        if: startsWith(github.head_ref, 'features/')
         strategy:
             matrix:
                 node-version: [14,16]
