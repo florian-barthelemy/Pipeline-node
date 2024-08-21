@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "types": ["jest"] // Ajoutez cette ligne
+    },
+    "include": ["src/**/*.ts", "src/**/*.test.ts"] // Assurez-vous d'inclure les fichiers de test
+  }
